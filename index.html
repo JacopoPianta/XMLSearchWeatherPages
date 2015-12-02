@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Xmlsearchweatherpages by JacopoPianta</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/JacopoPianta/XMLSearchWeatherPages">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Xmlsearchweatherpages</h1>
+            <h2></h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/JacopoPianta/XMLSearchWeatherPages/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/JacopoPianta/XMLSearchWeatherPages/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h2>
+<a id="welcome-to-xmlsearchweather-pages" class="anchor" href="#welcome-to-xmlsearchweather-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to XMLSearchWeather Pages.</h2>
+
+<h2>
+<a id="come-funziona-il-programma" class="anchor" href="#come-funziona-il-programma" aria-hidden="true"><span class="octicon octicon-link"></span></a>COME FUNZIONA IL PROGRAMMA?</h2>
+
+<p>Una volta stabilita la connessione via proxy, verifico d essermi collegato correttamente al servizio GeoCode di Google tramte la URL reading. Stabilita questa connessione creo l' XPath in modo da scorrere il documento XML ricevuto dal servizio, con compito di estrarre le coordinate che mi saranno utili successivamente. Avendo ricevuto la latitudine e la longitudine posso richiedere un secondo collegamento ad un'altro servizio, OpenWeatherMap, il quale mi permette di ricevere, sempre in formato XML, le informazioni inerenti alle previsioni del tempo. Dopo aver ricavato tutte queste informazioni, nel main, bisognerà semplicemente creare una connessione, successivamente creare un oggetto di tipo luogo dove andrà ad interrogare il GeoCode, ed infine un altro oggetto di tipo meteo dove andrà ad interrogare il OpenWeatherMap.</p>
+
+<h3>
+<a id="configurazione-e-utilzzo" class="anchor" href="#configurazione-e-utilzzo" aria-hidden="true"><span class="octicon octicon-link"></span></a>CONFIGURAZIONE E UTILZZO</h3>
+
+<p>Come spiegato nel funzionamento del programma, devo essere sicuro di avere un' autenticazione sul poxy, altrimenti il programma non parte. Una volta settato il tutto posso godere di tutto ciò che il programma può offrirmi.</p>
+
+<h3>
+<a id="supporto" class="anchor" href="#supporto" aria-hidden="true"><span class="octicon octicon-link"></span></a>SUPPORTO</h3>
+
+<p>Hai avuto qualche problema? Contatta: <a href="mailto:pianta.jacopo@gmail.com">pianta.jacopo@gmail.com</a></p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/JacopoPianta">JacopoPianta</a> can be found on <a href="https://github.com/JacopoPianta/XMLSearchWeatherPages">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
